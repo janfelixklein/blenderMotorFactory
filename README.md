@@ -13,14 +13,23 @@ This is an blender addon which can create motor. We parameterized many features 
 2. In Blender, go *Edit > Preference > Install* and find the file **Add Motor.zip**. Make sure it is activated.
 3. Now you can find it in *Add >Mesh*
 
+<div align="center"><img src="pic/AddMotor.png" alt="Image" style="zoom:0%;" /></div>
+
 ## 2. Advanced
+
+### 2.1 Modify a motor model
+
+After creating a motor model, the "Motor Property" - panel appears (either unfoalded or collapsed at the bottom left of the scene view).
+This panel allows you to modify the various motor parameters.
+
+<div align="center"><img src="pic/save.png" alt="Image" style="zoom:0%;" /></div>
 
 ### 2.1 Save model
 
-This Addon allow user generate various model and save the parameter as well as model as .stl file. To save the model, you can run the command in blender Console (**Shift + F4** to open it): 
+The modified motor model as well as its parameters can be saved easily. Run the following command in the blender console (**Shift + F4** to open it): 
 ``bpy.ops.mesh.add_motor(save_path="Path of folder")``
 
-The model will be saved as a whole entity and seperate parts
+which saves the model as a assembly and each parts seperately.
 
 <div align="left"><img src="pic\saved_file.png" alt="Image" style="zoom:0%;" /></div>
 
@@ -30,7 +39,6 @@ The model will be saved as a whole entity and seperate parts
 
 When you modified some motor manually and want to save the model and property value part by part, you can choose **Save the model** and then give the loaction where you want to save the model. Then the model you created will be saved.
 
-<div align="center"><img src="pic/save.png" alt="Image" style="zoom:0%;" /></div>
 
 ### 2.2 CSV data
 
